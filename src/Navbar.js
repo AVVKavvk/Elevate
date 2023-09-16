@@ -6,6 +6,8 @@ import close from "./image/close.svg";
 import { Key_Access_Token, count_User, getItem } from "./utils/localStorage";
 import { useSelector } from "react-redux";
 import { AiOutlineLogout } from "react-icons/ai";
+import { DownOutlined } from '@ant-design/icons';
+import { Dropdown, Space } from 'antd';
 
 function Navbar() {
   const a = getItem(Key_Access_Token);
@@ -21,48 +23,27 @@ function Navbar() {
     count = getItem(count_User);
   }, [count]);
 
-  // const items = [
-  //   {
-  //     key: "1",
-  //     label: (
-  //       <Link to="/" rel="noopener noreferrer">
-  //         Home
-  //       </Link>
-  //     ),
-  //   },
-  //   {
-  //     key: "2",
-  //     label: (
-  //       <Link to="/user/notes" rel="noopener noreferrer">
-  //         Notes
-  //       </Link>
-  //     ),
-  //   },
-  //   {
-  //     key: "3",
-  //     label: (
-  //       <Link to="/user/labs" rel="noopener noreferrer">
-  //         Labs
-  //       </Link>
-  //     ),
-  //   },
-  //   {
-  //     key: "4",
-  //     label: (
-  //       <Link to="/user/paper" rel="noopener noreferrer">
-  //         Paper
-  //       </Link>
-  //     ),
-  //   },
-  //   {
-  //     key: "5",
-  //     label: (
-  //       <Link to="/user/creator" rel="noopener noreferrer">
-  //         About Me
-  //       </Link>
-  //     ),
-  //   },
-  // ];
+  const items = [
+    {
+      label: <Link to="/user/notes" style={{ textDecoration: "none" }}>
+      Notes
+    </Link>,
+      key: '0',
+    },
+    {
+      label:  <Link to="/user/labs" style={{ textDecoration: "none" }}>
+      Labs
+    </Link>,
+      key: '1',
+    },
+      {
+      label: <Link to="/user/paper" style={{ textDecoration: "none" }}>
+      Paper
+    </Link>,
+      key: '3',
+    },
+  ];
+  
   return (
     <div class="font-mullish w-full relative rounded-sm text-2xl p-6 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ">
       {/* //TODO /simple */}
@@ -126,25 +107,12 @@ function Navbar() {
               }}
             >
               <Link to="/user/creator" style={{ textDecoration: "none" }}>
-                About_Me
+                AboutUs
               </Link>
             </li>
           </ul>
         </div>
-        {/* <Dropdown
-          menu={{
-            items,
-          }}
-          placement="bottomLeft"
-          arrow={{
-            pointAtCenter: true,
-          }}
-          style={{ height: "10px" }}
-        >
-          <img src={toggle?close:menu} alt="menu" class="w-[28px] h-[28px] object-contain cursor-pointer " 
-
-onClick={()=>setToggle(!toggle)}/>
-        </Dropdown> */}
+       
         <div>
           <ul class="flex sm:hidden justify-center items-center text-white gap-4 px-3">
             <>
@@ -184,6 +152,10 @@ onClick={()=>setToggle(!toggle)}/>
           </ul>
         </div>
       </div>
+
+
+     
+
       {/* //TODO /sm */}
       <div class="flex lg:max-w-[1300px]  mx-auto  justify-between items-center px-10  text-white  rounded-lg">
         <ul className="nav_bar sm:flex justify-center  items-center gap-4 hidden   ">
@@ -192,30 +164,31 @@ onClick={()=>setToggle(!toggle)}/>
               Home
             </Link>
           </li>
+          <li class="hover:underline cursor-pointer  hover:bg-indigo-600  p-2 rounded-md transition-all duration-500">
+             <Dropdown
+    menu={{
+      items,
+    }}
+    trigger={['click']}
+  >
+    <a class="l" onClick={(e) => e.preventDefault()}>
+      <Space >
+        Academics
+        
+      </Space>
+    </a>
+  </Dropdown>
+          </li>
 
-          <li class="hover:underline  hover:bg-blue-600   p-2 rounded-md transition-all duration-500">
-            <Link to="/user/notes" style={{ textDecoration: "none" }}>
-              Notes
-            </Link>
-          </li>
-          <li class="hover:underline hover:bg-sky-600   p-2 rounded-md transition-all duration-500">
-            <Link to="/user/labs" style={{ textDecoration: "none" }}>
-              Labs
-            </Link>
-          </li>
-          <li class="hover:underline   hover:bg-sky-400 p-2 rounded-md transition-all duration-500">
-            <Link to="/user/paper" style={{ textDecoration: "none" }}>
-              Paper
-            </Link>
-          </li>
+          
 
           <li class="hover:underline hover:bg-blue-500 p-2 rounded-md transition-all duration-500">
             <Link to="/user/creator" style={{ textDecoration: "none" }}>
-              About_Me
+              AboutUs
             </Link>
           </li>
         </ul>
-
+       
         <ul class="sm:flex hidden justify-center items-center gap-4 px-3">
           <>
             {a ? (
@@ -259,6 +232,7 @@ onClick={()=>setToggle(!toggle)}/>
           </>
         </ul>
       </div>
+      
     </div>
   );
 }
