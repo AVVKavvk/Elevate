@@ -1,0 +1,26 @@
+[
+    {
+        "link":"/",
+        "tag":"Home"
+    },
+    {
+        "link":"/user/notes",
+        "tag":"Notes"
+    },
+    {
+        "link":"/user/labs",
+        "tag":"Labs"
+    },
+    {
+        "link":"/user/paper",
+        "tag":"Papers"
+    },
+    {
+        "link":"/aluminia",
+        "tag":"Alumni"
+    },
+    {
+        "link":"/user/creator",
+        "tag":"AboutUs"
+    }
+]

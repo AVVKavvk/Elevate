@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Checkbox, Form, Input } from "antd";
+import { Form, Input } from "antd";
 
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { axiosClient } from "../utils/axiosClient";
 
 import { useDispatch } from "react-redux";
@@ -50,32 +50,14 @@ function ForgetPassword() {
   return (
     <div class="flex justify-center   mx-auto  p-4 mb-4 items-center ">
       
-      <div class="flex  flex-col justify-center items-center mx-auto h-[420px] mb-5 lg:h-[400px] lg:p-10 p-6  border-2 max-w-[600px] rounded-lg mt-11  border-green-400">
+      <div class="flex  flex-col justify-center items-center mx-auto h-[360px] mb-5 lg:h-[360px] lg:p-10 p-6  border-2 max-w-[600px] rounded-lg mt-11  border-green-400">
         <Form
-          name="basic"
-          labelCol={{
-            span: 8,
-          }}
-          wrapperCol={{
-            span: 16,
-          }}
-          style={{
-            maxWidth: 600,
-          }}
-          initialValues={{
-            remember: true,
-          }}
-          autoComplete="off"
+          
         >
           <Form.Item
-            label="email"
+            
             name="email"
-            rules={[
-              {
-                required: true,
-                message: "Please input your email!",
-              },
-            ]}
+            
           >
             <Input
               class=""
@@ -85,14 +67,9 @@ function ForgetPassword() {
           </Form.Item>
 
           <Form.Item
-            label="Password"
+            
             name="password"
-            rules={[
-              {
-                required: true,
-                message: "Please input your password!",
-              },
-            ]}
+            
           >
             <Input.Password
               placeholder="password"
@@ -100,17 +77,12 @@ function ForgetPassword() {
             />
           </Form.Item>
           <Form.Item
-            label="Confirm "
+            
             name="Confirm password"
-            rules={[
-              {
-                required: true,
-                message: "Please input your password!",
-              },
-            ]}
+            
           >
             <Input.Password
-              placeholder="password"
+              placeholder="confirm password"
               onChange={(e) => setconpassword(e.target.value)}
             />
           </Form.Item>

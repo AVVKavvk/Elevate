@@ -52,89 +52,38 @@ function Login() {
   //   countU();
   // }, []);
   return (
-    <div class="grid  lg:grid-cols-2 mx-auto lg:mx-72 mb-4 items-center ">
+    <div class="grid  lg:grid-cols-2 mx-auto lg:mx-72 mb-4 text-white items-center ">
       <div class="w-[580px] hidden lg:block mt-3 rounded-lg ">
         <img src={men} alt="" height="500px" width="400px" style={{}} />
       </div>
       <div class="flex  flex-col justify-center items-center mx-auto h-[420px] mb-5 lg:h-[400px] lg:p-10 p-6  border-2 max-w-[600px] rounded-lg mt-11  border-green-400">
         <Form
-          name="basic"
-          labelCol={{
-            span: 8,
-          }}
-          wrapperCol={{
-            span: 16,
-          }}
-          style={{
-            maxWidth: 600,
-          }}
-          initialValues={{
-            remember: true,
-          }}
-          autoComplete="off"
+          class="flex  flex-col justify-center items-center mx-auto"
         >
-          <Form.Item
-            label="email"
-            name="email"
-            rules={[
-              {
-                required: true,
-                message: "Please input your email!",
-              },
-            ]}
-          >
+          <Form.Item name="email">
             <Input
               class=""
               placeholder="email"
-              onChange={(e) => setemail(e.target.value)}
+              onChange={e => setemail(e.target.value)}
             />
           </Form.Item>
 
-          <Form.Item
-            label="Password"
-            name="password"
-            rules={[
-              {
-                required: true,
-                message: "Please input your password!",
-              },
-            ]}
-          >
+         
+          <Form.Item name="password">
             <Input.Password
               placeholder="password"
-              onChange={(e) => setpassword(e.target.value)}
+              onChange={e => setpassword(e.target.value)}
             />
           </Form.Item>
-
-          <Form.Item
-            name="remember"
-            valuePropName="checked"
-            wrapperCol={{
-              offset: 8,
-              span: 16,
-            }}
-          >
-            <Checkbox>Remember me</Checkbox>
-          </Form.Item>
-
-          <Form.Item
-            wrapperCol={{
-              offset: 8,
-              span: 1,
-            }}
-          >
-            <button
-              class="bg-blue-700 rounded-md text-lg p-1 px-3 text-white hover:bg-blue-600 transition-all duration-200  "
-              onClick={submitHandle}
-            >
-              Login
-            </button>
-          </Form.Item>
         </Form>
+        <button
+          class="bg-blue-700 rounded-md text-lg p-1 px-3 text-white hover:bg-blue-600 transition-all duration-200  "
+          onClick={submitHandle}
+        >
+          Login
+        </button>
         <Link to="/auth/forpass">
-          <h1 class="m-1 p-2  ">
-             Forget Password
-          </h1>
+          <h1 class=" p-2 m-3  ">Forget Password</h1>
         </Link>
         <h1 class="m-1 p-2 ">
           Do not have account{" "}

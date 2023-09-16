@@ -24,21 +24,21 @@ import { useDispatch, useSelector } from "react-redux";
 import Footer from "./Footer";
 
 function Home() {
-  const count = useSelector((state) => state.appConfigReducer.count);
-  // console.log(count);
-  const dispatch = useDispatch();
+  // const count = useSelector((state) => state.appConfigReducer.count);
+  // // console.log(count);
+  // const dispatch = useDispatch();
   const a = getItem(Key_Access_Token);
 
   return (
     <>
       <div class="mt-6">
-        <div className=" flex-col  lg:flex  hidden mx-auto sm:w-[400px] lg:w-[500px] mb-12  text-4xl justify-center text-blue-900    ">
+        <div className=" flex-col  lg:flex  hidden mx-auto sm:w-[400px] lg:w-[500px] mb-12  text-4xl justify-center text-blue-500    ">
           <h1 class="flex gap-3   ">
-            <span class="underline">Welcome to </span>
-            <h1 class="text-red-700 ">
+            Welcome to 
+            <h1 class="text-white ">
               <Typewriter
                 options={{
-                  strings: ["VIPIN'S WEBSITE", "NOTES WEBSITE"],
+                  strings: ["Elevate", "Quarkic World"],
                   autoStart: true,
                   loop: true,
                 }}

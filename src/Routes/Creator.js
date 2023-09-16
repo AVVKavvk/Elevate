@@ -15,10 +15,10 @@ import sk6 from "../image/sk6.svg";
 import sk7 from "../image/sk7.svg";
 import sk8 from "../image/sk8.svg";
 import sk9 from "../image/sk9.svg";
-import wave from "../image/wave.png";
+
 function Creator() {
   return (
-    <div class="flex flex-col sm:flex-row justify-center mb-10 p-5  mt-4 space-x-1 max-w-[1100px] mx-auto shadow-2xl ">
+    <div class="flex flex-col sm:flex-row justify-center mb-16 text-white p-5  mt-4 space-x-1 max-w-[1100px] mx-auto shadow-md  shadow-green-500 ">
       <div class="flex flex-col mx-auto  sm:w-[400px]  space-y-16 mb-5">
         <div class="rounded-xl w-[300px] h-[300px] mb-9 mt-2  ">
           {" "}
@@ -54,13 +54,7 @@ function Creator() {
             <SiGmail />
             <h1>kumawatvipin066@gmail.com</h1>
           </div>
-          {/* <hr
-            style={{
-              height: "1px",
-              backgroundColor: "#000000",
-              border: "none",
-            }}
-          /> */}
+        
         </div>
         <div class="flex  flex-col text-2xl space-y-2 mb-3 ">
           <div class="flex  text-center   space-x-4 items-center justify-start">
@@ -150,7 +144,7 @@ function Creator() {
           <h1 class=" text-3xl">
             {/* <img src={wave} alt="" /> */}
             Hi 👋, I'm Vipin Kumawat <br />A passionate
-            <h1 class="text-red-700 text-4xl ">
+            <h1 class="text-blue-700 text-4xl ">
               <Typewriter
                 options={{
                   strings: ["Front-End", "Back-End", "MERN", "Full-Stack"],
@@ -166,7 +160,7 @@ function Creator() {
         <hr
           style={{
             height: "1px",
-            backgroundColor: "#000000",
+            backgroundColor: "white",
             border: "none",
           }}
           class="mt-5"

@@ -6,6 +6,7 @@ import Notes from "./Routes/Notes";
 import Labs from "./Routes/Labs";
 import Navbar from "./Navbar";
 import Login from "./Routes/Login";
+import Aluminia from "./Routes/Aluminia";
 import Signup from "./Routes/Signup";
 import Sem1 from "../src/Notes/Sem1";
 import Sem2 from "../src/Notes/Sem2";
@@ -104,7 +105,9 @@ function App() {
           <Route path="sem5" element={<Seml5 />} />
          <Route path="sem6" element={<Seml6 />} />
         </Route>
+
         <Route path="/auth/login" element={<Login />} />
+        <Route path="/aluminia" element={<Aluminia />} />
         <Route path="/auth/forpass" element={<ForgetPassword />} />
         <Route path="/auth/signup" element={<Signup />} />
         <Route path="/auth/visitor" element={<Visitor />} />

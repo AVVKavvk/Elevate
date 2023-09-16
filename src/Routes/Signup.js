@@ -94,89 +94,67 @@ function Signup() {
     // console.log(error);
   }
   return (
-    <div class="grid items-center mx-auto ">
-      <div class="flex flex-col  p-15 mx-3 mt-10 max-h-[700px] justify-center items-center sm:mx-auto sm:h-[450px] sm:p-10  border-2 sm:max-w-[600px] mb-5 rounded-lg sm:mt-2  border-green-400">
-        <h1 class="text-xl hidden sm:block  p-2 m-3 text-red-500">
-          SignUp for accessing website
-        </h1>
+    <div class="grid items-center mx-auto  ">
+      <div class="flex flex-col px-10 mx-auto mt-10 h-[550px] w-[320px]  justify-center items-center sm:mx-auto sm:h-[600px] sm:p-10  border-2 sm:w-[500px] mb-5 rounded-lg sm:mt-2  border-green-400">
         <Form
           onSubmit={handleSignup}
           name="basic"
-          labelCol={{
-            span: 8,
-          }}
-          wrapperCol={{
-            span: 16,
-          }}
-          style={{
-            maxWidth: 600,
-          }}
-          initialValues={{
-            remember: true,
-          }}
           autoComplete="off"
+          class=" w-[270px] sm:w-[350px]"
         >
-          <Form.Item
-            label="Name"
-            name="name"
-            rules={[
-              {
-                required: true,
-                message: "Please input your Name!",
-              },
-            ]}
-          >
+          <Form.Item>
+            <label value="name" class="text-white">
+              {" "}
+              <h1 class=" text-lg my-2 ">
+                {" "}
+                <span class="text-red-500">*</span> Name
+              </h1>
+            </label>
             <Input
               placeholder="vipin"
-              onChange={(e) => setname(e.target.value)}
+              onChange={e => setname(e.target.value)}
             />
           </Form.Item>
-          <Form.Item
-            label="Phone Number"
-            name="phNo"
-            rules={[
-              {
-                required: true,
-                message: "Please input your Number!",
-              },
-            ]}
-          >
+          <Form.Item name="phNo">
+            <label value="phNo" class="text-white">
+              {" "}
+              <h1 class=" text-lg my-2 ">
+                {" "}
+                <span class="text-red-500">*</span> Phone Number
+              </h1>
+            </label>
             <Input
               placeholder="+91810709...."
-              onChange={(e) => setnumber(e.target.value)}
+              onChange={e => setnumber(e.target.value)}
             />
           </Form.Item>
-          <Form.Item
-            label="email"
-            name="email"
-            rules={[
-              {
-                required: true,
-                message: "Please input your email!",
-              },
-            ]}
-          >
+          <Form.Item name="email">
+            <label value="email" class="text-white">
+              {" "}
+              <h1 class=" text-lg my-2 ">
+                {" "}
+                <span class="text-red-500">*</span> Email
+              </h1>
+            </label>
             <Input
               class=""
               type="email"
               placeholder="vipin...6@gmail.com"
-              onChange={(e) => setemail(e.target.value)}
+              onChange={e => setemail(e.target.value)}
             />
           </Form.Item>
 
-          <Form.Item
-            label="Password"
-            name="password"
-            rules={[
-              {
-                required: true,
-                message: "Please input your password!",
-              },
-            ]}
-          >
+          <Form.Item name="password">
+            <label value="password" class="text-white">
+              {" "}
+              <h1 class=" text-lg my-2 ">
+                {" "}
+                <span class="text-red-500">*</span> Password
+              </h1>
+            </label>
             <Input.Password
               placeholder="password"
-              onChange={(e) => setpassword(e.target.value)}
+              onChange={e => setpassword(e.target.value)}
             />
           </Form.Item>
 
