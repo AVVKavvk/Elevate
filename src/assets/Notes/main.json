@@ -1,0 +1,34 @@
+[
+    {
+        "link":"/user/notes/sem1",
+        "sem":"Semester 1"
+
+    },
+    {
+        "link":"/user/notes/sem2",
+        "sem":"Semester 2"
+
+    },
+    {
+        "link":"/user/notes/sem3",
+        "sem":"Semester 3"
+
+    },
+    {
+        "link":"/user/notes/sem4",
+        "sem":"Semester 4"
+
+    },
+    {
+        "link":"/user/notes/sem5",
+        "sem":"Semester 5"
+
+    },
+    {
+        "link":"/user/notes/sem6",
+        "sem":"Semester 6"
+
+    }
+    
+    
+]

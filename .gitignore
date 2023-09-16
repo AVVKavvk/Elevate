@@ -12,6 +12,7 @@
 /build
 /1.txt
 /m.txt
+/home.txt
 # misc
 .DS_Store
 .env.local
