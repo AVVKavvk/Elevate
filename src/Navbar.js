@@ -192,6 +192,11 @@ function Navbar() {
               </Link>
             </li>
             <li class="hover:underline  p-2 rounded-md transition-all duration-500">
+              <Link to="/resume" style={{ textDecoration: "none" }}>
+                Resume
+              </Link>
+            </li>
+            <li class="hover:underline  p-2 rounded-md transition-all duration-500">
               <Link to="/user/creator" style={{ textDecoration: "none" }}>
                 AboutUs
               </Link>

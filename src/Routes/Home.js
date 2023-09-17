@@ -32,7 +32,19 @@ function Home() {
           </h1>
         </div>
 
-        <>
+        
+      </div>
+
+    
+
+      <Footer />
+    </>
+  );
+}
+
+export default Home;
+
+{/* <>
           {a ? (
             " "
           ) : (
@@ -64,14 +76,4 @@ function Home() {
               </h1>
             </div>
           )}
-        </>
-      </div>
-
-    
-
-      <Footer />
-    </>
-  );
-}
-
-export default Home;
+        </> */}

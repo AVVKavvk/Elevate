@@ -20,7 +20,13 @@
         "tag":"Alumni"
     },
     {
+        "link":"/resume",
+        "tag":"Resume"
+    },
+    {
         "link":"/user/creator",
         "tag":"AboutUs"
     }
+    
+   
 ]
