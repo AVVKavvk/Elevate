@@ -173,7 +173,7 @@ function Navbar() {
                 Home
               </Link>
             </li>
-            <li class="hover:underline cursor-pointer    p-2 rounded-md transition-all duration-500">
+            {/* <li class="hover:underline cursor-pointer    p-2 rounded-md transition-all duration-500">
               <Dropdown
                 menu={{
                   items,
@@ -184,8 +184,13 @@ function Navbar() {
                   <Space>Academics</Space>
                 </a>
               </Dropdown>
-            </li>
+            </li> */}
 
+            <li class="hover:underline  p-2 rounded-md transition-all duration-500">
+              <Link to="/user/academics" style={{ textDecoration: "none" }}>
+                Academics
+              </Link>
+            </li>
             <li class="hover:underline  p-2 rounded-md transition-all duration-500">
               <Link to="/aluminia" style={{ textDecoration: "none" }}>
                 Alumni

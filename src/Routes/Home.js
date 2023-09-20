@@ -3,20 +3,34 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
 
-import { getItem } from "../utils/localStorage";
+import { count_User, getItem } from "../utils/localStorage";
 import { Key_Access_Token } from "../utils/localStorage";
 
 import Footer from "./Footer";
+import { useSelector } from "react-redux";
+import { useEffect } from "react";
 
 function Home() {
   // const count = useSelector((state) => state.appConfigReducer.count);
   // // console.log(count);
   // const dispatch = useDispatch();
   const a = getItem(Key_Access_Token);
+  var b = useSelector(state => state.appConfigReducer.count);
+  var count = 1;
+  if (b === 0) {
+    count = getItem(count_User);
+  } else {
+    count = b;
+  }
+  
+  useEffect(() => {
+    count = getItem(count_User);
+  }, [count]);
 
+  console.log(count);
   return (
     <>
-      <div class="mt-6">
+      <div class="mt-4">
         <div className=" flex-col  lg:flex  hidden mx-auto sm:w-[400px] lg:w-[500px] mb-12  text-4xl justify-center text-blue-500    ">
           <h1 class="flex gap-3   ">
             Welcome to
@@ -31,8 +45,10 @@ function Home() {
             </h1>
           </h1>
         </div>
+      
+      
 
-        
+
       </div>
 
     

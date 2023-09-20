@@ -42,6 +42,7 @@ import Logout from "./Routes/Logout";
 import Resume from "./Routes/Resume";
 import RichText from "./Routes/RichText";
 import ResumePage from "./Routes/ResumePage";
+import Academics from "./Academics";
 export const TOAST_SUCCESS = "toast_success";
 export const TOAST_ERROR = "toast_error";
 function App() {
@@ -76,7 +77,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/user/academics" element={<Academics />} />
         {
+      
           <Route path="/user/paper" element={<Paper />}>
             <Route path="" element={<Ap />} />
             <Route path="sem1" element={<Semp1 />} />
