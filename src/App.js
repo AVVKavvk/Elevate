@@ -42,7 +42,7 @@ import Logout from "./Routes/Logout";
 import Resume from "./Routes/Resume";
 import RichText from "./Routes/RichText";
 import ResumePage from "./Routes/ResumePage";
-import Academics from "./Academics";
+import Academics from "./Routes/Academics";
 export const TOAST_SUCCESS = "toast_success";
 export const TOAST_ERROR = "toast_error";
 function App() {

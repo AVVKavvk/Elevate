@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import i1 from "./image/doubleArrow.svg";
-import wave from "./image/wave.svg";
+import i1 from "../image/doubleArrow.svg";
+import wave from "../image/wave.svg";
 import { FiExternalLink } from "react-icons/fi";
-import notes from "./image/notes.png";
-import labs from "./image/labs.png";
-import papers from "./image/papers.png";
+import notes from "../image/notes.png";
+import labs from "../image/labs.png";
+import papers from "../image/papers.png";
 
 function Academics() {
   const content = [
@@ -29,7 +29,7 @@ function Academics() {
     },
   ];
   return (
-    <div className="font-mullish mt-4 mb-10 md:mt-5  rounded-md flex max-w-[1400px] mx-auto relative text-xl">
+    <div className=" hidden md:flex font-mullish mt-4 mb-10 md:mt-5  rounded-md  max-w-[1400px] mx-auto relative text-xl">
       <div className="w-[27%] rounded-md flex flex-col border border-gray-300 justify-between gap-3">
         {content?.map(item => {
           return (
