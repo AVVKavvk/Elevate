@@ -1,0 +1,42 @@
+[{
+    "title":"E-books and Research Papers",
+    "desc":"Curate a collection of engineering-related e-books, research papers, and articles."
+},
+{
+    "title":"Feedback Mechanism",
+    "desc":"Allow students to provide feedback on the website's content, usability, and features to continually improve the platform."
+},
+{
+    "title":"Coding Libraries",
+    "desc":" Provide code snippets, algorithms, and example projects for different programming languages and domains."
+},
+    {
+        "title":"Internship and Job Listings",
+        "desc":"Partner with companies to post internship and job opportunities relevant to engineering fields"
+    },
+    {
+        "title":"Online Courses",
+        "desc":" Collaborate with industry experts to offer online courses on in-demand skills like programming languages, data analysis, project management, etc."
+    },
+    {
+        "title":"Coding Challenges",
+        "desc":"Host coding challenges and hackathons to enhance coding skills and problem-solving abilities."
+    },
+    {
+        "title":"Mental Health Resources",
+        "desc":"Offer articles, videos, and resources related to stress management, anxiety, and mental well-being."
+    },
+    {
+        "title":"Personal Development Blogs",
+        "desc":" Provide content on time management, productivity, leadership, and personal growth."
+    },
+    {
+        "title":"Event Calendar",
+        "desc":"List academic and extracurricular events, workshops, seminars, and conferences happening on campus."
+    },
+    {
+        "title":"Student Organizations",
+        "desc":" Showcase various student clubs and organizations to foster networking and community involvement."
+    }
+    
+]
