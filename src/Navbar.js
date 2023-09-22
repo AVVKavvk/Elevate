@@ -208,6 +208,11 @@ function Navbar() {
               </Link>
             </li>
             <li class="hover:underline  p-2 rounded-md transition-all duration-500">
+              <Link to="/certificates" style={{ textDecoration: "none" }}>
+              Certificates
+              </Link>
+            </li>
+            <li class="hover:underline  p-2 rounded-md transition-all duration-500">
               <Link to="/user/creator" style={{ textDecoration: "none" }}>
                 AboutUs
               </Link>

@@ -43,6 +43,7 @@ import Resume from "./Routes/Resume";
 import RichText from "./Routes/RichText";
 import ResumePage from "./Routes/ResumePage";
 import Academics from "./Routes/Academics";
+import CertificationPrograms from "./Routes/CertificationPrograms";
 export const TOAST_SUCCESS = "toast_success";
 export const TOAST_ERROR = "toast_error";
 function App() {
@@ -113,6 +114,7 @@ function App() {
         </Route>
 
         <Route path="/auth/login" element={<Login />} />
+        <Route path="/certificates" element={<CertificationPrograms />} />
         <Route path="/aluminia" element={<Aluminia />} />
         <Route path="/resume" element={<ResumePage />}>
           <Route path="in-5-min" element={<Resume />} />

@@ -26,9 +26,9 @@ function ResumePage() {
             setA(true);
             Click();
           }}
-          class="border border-gray-300 md:w-[45%] w-[330px] h-[330px] md:h-[260px] mx-auto rounded-md"
+          class="border  border-gray-300 md:w-[45%] w-[330px] h-[330px] md:h-[260px] mx-auto rounded-md"
         >
-          <div class="w-full  relative cursor-pointer  min-h-[16.2rem] group rounded-md">
+          <div class="w-full -z-30 relative cursor-pointer  min-h-[16.2rem] group rounded-md">
             <img
               src={i1}
               alt=""
@@ -67,7 +67,7 @@ function ResumePage() {
             setA(true);
             Click();
           }}
-          class="border border-gray-300 md:w-[50%] w-[330px] h-[370px] md:h-[260px] mx-auto rounded-md"
+          class="border  border-gray-300 md:w-[50%] w-[330px] h-[370px] md:h-[260px] mx-auto rounded-md"
         >
           <div class="w-full  relative cursor-pointer  min-h-[16.2rem] group rounded-md">
             <img

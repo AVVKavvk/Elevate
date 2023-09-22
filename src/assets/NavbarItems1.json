@@ -24,6 +24,10 @@
         "tag":"Resume"
     },
     {
+        "link":"/certificates",
+        "tag":"Certificates"
+    },
+    {
         "link":"/user/creator",
         "tag":"AboutUs"
     }
