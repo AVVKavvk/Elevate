@@ -6,6 +6,7 @@ import { FiExternalLink } from "react-icons/fi";
 import notes from "../image/notes.png";
 import labs from "../image/labs.png";
 import papers from "../image/papers.png";
+import books from "../image/books.png";
 
 function Academics() {
   const content = [
@@ -26,6 +27,12 @@ function Academics() {
       tag: "Papers",
       description:
         "These exam papers from the previous year offer a comprehensive review of topics, aiding in effective exam preparation and performance.",
+    },
+    {
+      link: "/e-book",
+      tag: "Books",
+      description:
+        " We're excited to offer you access to a wide selection of e-books covering a multitude of subjects and disciplines.",
     },
   ];
   return (
@@ -98,6 +105,16 @@ function Academics() {
             identify key topics and trends in your curriculum.
           </p>
           <img src={papers} alt="" width="400px" class="rounded-md" />
+        </div>
+        <div class="flex from-white justify-center text-grayText font-mullish items-center mx-auto p-2 text-justify gap-4 mt-4 ">
+          <img src={books} alt="" width="400px" class="rounded-md" />
+          <p>
+            Books are curated to provide you with in-depth knowledge and
+            insights, making your studies even more enriching. Whether you're
+            preparing for exams, aiming to deepen your understanding of a
+            subject, or simply expanding your horizons, our website is your
+            go-to destination.
+          </p>
         </div>
       </div>
     </div>

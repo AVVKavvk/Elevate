@@ -16,6 +16,10 @@
         "tag":"Papers"
     },
     {
+        "link":"/e-book",
+        "tag":"Books"
+    },
+    {
         "link":"/aluminia",
         "tag":"Alumni"
     },

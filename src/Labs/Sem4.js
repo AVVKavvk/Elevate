@@ -5,6 +5,8 @@ import llll from '../image/l4ll.svg'
 import lllll from '../image/l4lll.svg'
 function Sem4() {
   return (
+    <div class="mx-auto sm:w-[500px]  md:max-w-[1000px] mt-7 ">
+      <h1 class=" text-2xl text-red-500 ">When you want to see Labs then use your Logged In Email</h1>
     <div class="sm:w-[500px]  lg:w-[900px] lg:p-6 grid grid-cols-1  sm:grid-cols-2   mx-auto  relative lg:grid-cols-4 gap-2 pt-4  space-y-2 sm:space-x-8 sm:space-y-5 mt-8 overflow-hidden">
     <div class="relative flex flex-col justify-center items-center text-center  w-full h-[250px] space-x-16  px-5 ">
       <div>
@@ -76,6 +78,7 @@ function Sem4() {
     </div>
     
       
+    </div>
     </div>
   )
 }

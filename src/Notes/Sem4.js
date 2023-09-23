@@ -3,6 +3,8 @@ import ll from "../image/logo1.svg";
 import Notes4 from "../assets/Notes/Notes4.json";
 function Sem4() {
   return (
+    <div class="mx-auto lg:w-[1200px] mt-7 ">
+    <h1 class=" text-2xl text-red-500 ">When you want to open Notes then use your Logged In Email</h1>
     <div class=" lg:w-[1400px] grid sm:grid-cols-3 grid-cols-2 space-y-5 lg:space-y-0 ml-6 lg:mx-auto lg:grid-cols-9 relative  justify-evenly  mt-8 overflow-hidden">
       {Notes4?.map(item => {
         return (
@@ -54,6 +56,7 @@ function Sem4() {
           </div>
         );
       })}
+    </div>
     </div>
   );
 }
