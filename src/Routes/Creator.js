@@ -18,21 +18,25 @@ import sk9 from "../image/sk9.svg";
 
 function Creator() {
   return (
-    <div class=" bg-[#fffafa] flex flex-col sm:flex-row justify-center mb-16 p-5  mt-4 space-x-1 max-w-[1100px] mx-auto shadow-md  shadow-green-500 ">
-      <div class="flex flex-col mx-auto  sm:w-[400px]  space-y-16 mb-5">
-        <div class="rounded-xl w-[300px] h-[300px] mb-9 mt-2  ">
+    <div class=" bg-[#fffafa] flex flex-col justify-center  gap-6 items-center mb-16 p-5  mt-4  max-w-[1100px] mx-auto shadow-md  shadow-green-500 ">
+      <div class="flex  mx-auto px-2  space-y-16 mb-5">
+        <div class="rounded-xl w-[200px] h-[270px] mb-4 mt-2  ">
           {" "}
-          <a href="https://i.ibb.co/417cTGP/vipin.png" target="_blank">
+          <a href="https://i.ibb.co/9VtWVY2/vipins.png" target="_blank">
             {" "}
             <img
-              src="https://i.ibb.co/417cTGP/vipin.png"
+              src="https://i.ibb.co/9VtWVY2/vipins.png"
               alt="vipin"
               class="w-full"
             />{" "}
           </a>
           <h1 class="text-center text-2xl mt-2 mb-1 ">Vipin Kumawat</h1>
-
-          <a href="https://vipinkumawatportfolio.netlify.app/" target="_blank">  <h1 class="text-center text-xl text-red-700 hover:bg-red-400 hover:text-red-900 transition-all duration-500 bg-red-300 px-1 py-[1px] rounded-2xl mx-auto max-w-[100px] mb-1">Portfolio</h1> </a>
+          <a href="https://vipinkumawatportfolio.netlify.app/" target="_blank">
+            {" "}
+            <h1 class="text-center text-xl text-red-700 hover:bg-red-400 hover:text-red-900 transition-all duration-500 bg-red-300 px-1 py-[1px] rounded-2xl mx-auto max-w-[100px] mb-1">
+              Portfolio
+            </h1>{" "}
+          </a>
           <hr
             style={{
               height: "1px",
@@ -41,8 +45,8 @@ function Creator() {
             }}
           />
         </div>
-        <div class="flex  flex-col  space-y-2 mb-3 ">
-          <div class="flex  text-center  text-2xl  space-x-4 items-center justify-start">
+        <div class="flex  flex-col ml-5  mr-5 space-y-2 mb-3 ">
+          <div class="flex  text-center  text-2xl   space-x-4 items-center justify-start">
             <FcHome />
             <h1>Sikar, Rajasthan</h1>
           </div>
@@ -54,7 +58,6 @@ function Creator() {
             <SiGmail />
             <h1>kumawatvipin066@gmail.com</h1>
           </div>
-        
         </div>
         <div class="flex  flex-col text-2xl space-y-2 mb-3 ">
           <div class="flex  text-center   space-x-4 items-center justify-start">
@@ -83,100 +86,175 @@ function Creator() {
           </div>
         </div>
       </div>
-
-      <div class="flex flex-col sm:w-[600px] mx-auto mt-3  ">
-        <div class="flex space-x-3 justify-evenly mb-16   ">
-          <div class="flex flex-col justify-center items-center ">
+      <div class="flex  mx-auto px-2  space-y-16 mb-5">
+        <div class="rounded-xl w-[200px] h-[270px] mb-4 mt-2  ">
+          {" "}
+          <a href="https://i.ibb.co/qD6Wfvp/chai.png" target="_blank">
             {" "}
-            <a href="https://iiitp.ac.in/" target="_blank">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/IIITP_logo.jpg/256px-IIITP_logo.jpg"
-                width="100px"
-                height="100px"
-                alt=""
-              />
-            </a>
-            <h1 class="text-lg m-1 text-center">BTech pursuing </h1>
-            <h1 class="text-lg  text-center">
-              CGPA - <span class="ml-2"> 8.54 </span>{" "}
-            </h1>
+            <img
+              src="https://i.ibb.co/qD6Wfvp/chai.png"
+              alt="vipin"
+              class="w-full"
+            />{" "}
+          </a>
+          <h1 class="text-center text-2xl mt-2 mb-1 ">Chaitanya Deshmukh</h1>
+          {/* <a href="https://vipinkumawatportfolio.netlify.app/" target="_blank">  <h1 class="text-center text-xl text-red-700 hover:bg-red-400 hover:text-red-900 transition-all duration-500 bg-red-300 px-1 py-[1px] rounded-2xl mx-auto max-w-[100px] mb-1">Portfolio</h1> </a> */}
+          <hr
+            style={{
+              height: "1px",
+              backgroundColor: "#000000",
+              border: "none",
+            }}
+          />
+        </div>
+        <div class="flex  flex-col ml-5  mr-5 space-y-2 mb-3 ">
+          <div class="flex  text-center  text-2xl   space-x-4 items-center justify-start">
+            <FcHome />
+            <h1>Pune, Maharashtra</h1>
           </div>
-          <div>
-            {" "}
-            <a href="https://gurukripa.ac.in/" target="_blank">
-              <img
-                src="https://directory.edugorilla.com/wp-content/uploads/sites/6/2019/07/12472758_471297122995051_8149943114014984818_n.jpg"
-                alt=""
-                width="100px"
-                height="100px"
-              />
-            </a>
-            <h1 class="text-lg m-1 text-center ">Class 12 </h1>
-            <h1 class="text-lg text-center ">
-              Grade - <span class="ml-2"> 80% </span>{" "}
-            </h1>
+          <div class="flex  text-center  text-2xl  space-x-4 items-center justify-start">
+            <AiFillPhone />
+            <h1>9822500595</h1>
           </div>
-          <div>
-            {" "}
-            <a href="https://www.princeeduhub.com/" target="_blank">
-              <img
-                src="https://www.princeeduhub.com/images/logo/Prince-RBSE.png"
-                alt=""
-                width="100px"
-                height="100px"
-              />
-            </a>
-            <h1 class="text-lg m-1 text-center">Class 10 </h1>
-            <h1 class="text-lg text-center ">
-              Grade - <span class="ml-2"> 92% </span>{" "}
-            </h1>
+          <div class="flex  text-center text-lg lg:text-2xl   space-x-4 items-center justify-start">
+            <SiGmail />
+            <h1>chaitanya.d48@gmail.com</h1>
           </div>
         </div>
-        {/* <hr
-          style={{
-            height: "1px",
-            backgroundColor: "#000000",
-            border: "none",
-          }}
-        /> */}
-
-        <div class="flex flex-col justify-center items-center text-center my-10 mb-18 ">
-          <h1 class=" text-3xl">
-            {/* <img src={wave} alt="" /> */}
-            Hi 👋, I'm Vipin Kumawat <br />A passionate
-            <h1 class="text-blue-700 text-4xl ">
-              <Typewriter
-                options={{
-                  strings: ["Front-End", "Back-End", "MERN", "Full-Stack"],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </h1>
-            Developer
-          </h1>
+        <div class="flex  flex-col text-2xl space-y-2 mb-3 ">
+          <div class="flex  text-center   space-x-4 items-center justify-start">
+            <BsLinkedin style={{ color: "blue" }} />
+            <a
+              href="https://www.linkedin.com/in/chaitanya-deshmukh-300907223/"
+              target="_blank"
+            >
+              {" "}
+              <h1>LinkedIn</h1>{" "}
+            </a>
+          </div>
+          <div class="flex  text-center   space-x-4 items-center justify-start">
+            <FaGithubSquare />
+            <a href="https://github.com/ChaitanyaD48" target="_blank">
+              {" "}
+              <h1>Github</h1>{" "}
+            </a>
+          </div>
+          <div class="flex  text-center   space-x-4 items-center justify-start">
+            <FaInstagramSquare />
+            <a href="https://www.instagram.com/heyy.chaitanya/" target="_blank">
+              {" "}
+              <h1>Instagram</h1>{" "}
+            </a>
+          </div>
         </div>
-
-        <hr
-          style={{
-            height: "1px",
-            backgroundColor: "white",
-            border: "none",
-          }}
-          class="mt-5"
-        />
-        <div>
-          <h1 class="text-2xl m-1 text-center">Skills</h1>
-          <div class="mt-3 grid grid-cols-5 space-x-2 sm:space-x-0  justify-evenly items-center space-y-2 mx-auto">
-             <a href="https://html.com/" target="_blank"> <img src={sk1} alt="" width="70px" height="70px" /></a>
-             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"> <img src={sk2} alt="" width="70px" height="70px" /></a>
-             <a href="https://tailwindcss.com/" target="_blank"> <img src={sk3} alt="" width="70px" height="70px" /></a>
-             <a href="https://www.javascript.com/" target="_blank"> <img src={sk4} alt="" width="70px" height="70px" /></a>
-             <a href="https://react.dev/" target="_blank"> <img src={sk5} alt="" width="70px" height="70px" /></a>
-             <a href="https://redux.js.org/" target="_blank"> <img src={sk6} alt="" width="70px" height="70px" /></a> 
-             <a href="https://nodejs.org/en" target="_blank"> <img src={sk7} alt="" width="70px" height="70px" /></a>
-             <a href="https://www.mongodb.com/atlas/database" target="_blank"> <img src={sk8} alt="" width="70px" height="70px" /></a>
-             <a href="https://expressjs.com/" target="_blank"> <img src={sk9} alt="" width="70px" height="70px" /></a>
+      </div>
+      <div class="flex  mx-auto px-2  space-y-16 mb-5">
+        <div class="rounded-xl w-[200px] h-[270px] mb-4 mt-2  ">
+          {" "}
+          <a href="https://i.ibb.co/9cFgYhv/srijan.jpg" target="_blank">
+            {" "}
+            <img
+              src="https://i.ibb.co/9cFgYhv/srijan.jpg"
+              alt="vipin"
+              class="w-full"
+            />{" "}
+          </a>
+          <h1 class="text-center text-2xl mt-2 mb-1 ">Srijan Raha</h1>
+          {/* <a href="https://vipinkumawatportfolio.netlify.app/" target="_blank">  <h1 class="text-center text-xl text-red-700 hover:bg-red-400 hover:text-red-900 transition-all duration-500 bg-red-300 px-1 py-[1px] rounded-2xl mx-auto max-w-[100px] mb-1">Portfolio</h1> </a> */}
+          <hr
+            style={{
+              height: "1px",
+              backgroundColor: "#000000",
+              border: "none",
+            }}
+          />
+        </div>
+        <div class="flex  flex-col ml-5  mr-5 space-y-2 mb-3 ">
+          <div class="flex  text-center  text-2xl   space-x-4 items-center justify-start">
+            <FcHome />
+            <h1>Kolkata , West Bengal</h1>
+          </div>
+          <div class="flex  text-center  text-2xl  space-x-4 items-center justify-start">
+            <AiFillPhone />
+            <h1>7240828344</h1>
+          </div>
+          <div class="flex  text-center text-lg lg:text-2xl   space-x-4 items-center justify-start">
+            <SiGmail />
+            <h1>rahasrijan@gmail.com</h1>
+          </div>
+        </div>
+        <div class="flex  flex-col text-2xl space-y-2 mb-3 ">
+          <div class="flex  text-center   space-x-4 items-center justify-start">
+            <BsLinkedin style={{ color: "blue" }} />
+            <a
+              href="https://www.linkedin.com/in/srijan-raha-557161288/"
+              target="_blank"
+            >
+              {" "}
+              <h1>LinkedIn</h1>{" "}
+            </a>
+          </div>
+          <div class="flex  text-center   space-x-4 items-center justify-start">
+            <FaGithubSquare />
+            <a href="https://github.com/srijan-25" target="_blank">
+              {" "}
+              <h1>Github</h1>{" "}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex  ml-56  mx-auto px-2  space-y-16 mb-5">
+        <div class="rounded-xl w-[200px] h-[270px] mb-4 mt-2  ">
+          {" "}
+          <a href="https://i.ibb.co/S65DS00/adar.png" target="_blank">
+            {" "}
+            <img
+              src="https://i.ibb.co/S65DS00/adar.png"
+              alt="vipin"
+              class="w-full"
+            />{" "}
+          </a>
+          <h1 class="text-center text-2xl mt-2 mb-1 ">Adarsh Jha</h1>
+         
+          <hr
+            style={{
+              height: "1px",
+              backgroundColor: "#000000",
+              border: "none",
+            }}
+          />
+        </div>
+        <div class="flex  flex-col ml-5  mr-5 space-y-2 mb-3 ">
+          <div class="flex  text-center  text-2xl   space-x-4 items-center justify-start">
+            <FcHome />
+            <h1>Kota, Rajasthan</h1>
+          </div>
+          <div class="flex  text-center  text-2xl  space-x-4 items-center justify-start">
+            <AiFillPhone />
+            <h1>7794868560</h1>
+          </div>
+          <div class="flex  text-center text-lg lg:text-2xl   space-x-4 items-center justify-start">
+            <SiGmail />
+            <h1>jhakumaradarsh@gmail.com</h1>
+          </div>
+        </div>
+        <div class="flex  flex-col text-2xl space-y-2 mb-3 ">
+          <div class="flex  text-center   space-x-4 items-center justify-start">
+            <BsLinkedin style={{ color: "blue" }} />
+            <a
+              href="https://www.linkedin.com/in/adarsh-kumar-jha-b800a3223/"
+              target="_blank"
+            >
+              {" "}
+              <h1>LinkedIn</h1>{" "}
+            </a>
+          </div>
+          <div class="flex  text-center   space-x-4 items-center justify-start">
+            <FaGithubSquare />
+            <a href="https://github.com/Adarshjht" target="_blank">
+              {" "}
+              <h1>Github</h1>{" "}
+            </a>
           </div>
         </div>
       </div>
@@ -185,3 +263,106 @@ function Creator() {
 }
 
 export default Creator;
+
+{
+  /* <div class="flex flex-col sm:w-[600px] mx-auto mt-3  ">
+<div class="flex space-x-3 justify-evenly mb-16   ">
+  <div class="flex flex-col justify-center items-center ">
+    {" "}
+    <a href="https://iiitp.ac.in/" target="_blank">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/IIITP_logo.jpg/256px-IIITP_logo.jpg"
+        width="100px"
+        height="100px"
+        alt=""
+      />
+    </a>
+    <h1 class="text-lg m-1 text-center">BTech pursuing </h1>
+    <h1 class="text-lg  text-center">
+      CGPA - <span class="ml-2"> 8.54 </span>{" "}
+    </h1>
+  </div>
+  <div>
+    {" "}
+    <a href="https://gurukripa.ac.in/" target="_blank">
+      <img
+        src="https://directory.edugorilla.com/wp-content/uploads/sites/6/2019/07/12472758_471297122995051_8149943114014984818_n.jpg"
+        alt=""
+        width="100px"
+        height="100px"
+      />
+    </a>
+    <h1 class="text-lg m-1 text-center ">Class 12 </h1>
+    <h1 class="text-lg text-center ">
+      Grade - <span class="ml-2"> 80% </span>{" "}
+    </h1>
+  </div>
+  <div>
+    {" "}
+    <a href="https://www.princeeduhub.com/" target="_blank">
+      <img
+        src="https://www.princeeduhub.com/images/logo/Prince-RBSE.png"
+        alt=""
+        width="100px"
+        height="100px"
+      />
+    </a>
+    <h1 class="text-lg m-1 text-center">Class 10 </h1>
+    <h1 class="text-lg text-center ">
+      Grade - <span class="ml-2"> 92% </span>{" "}
+    </h1>
+  </div>
+</div>
+{/* <hr
+  style={{
+    height: "1px",
+    backgroundColor: "#000000",
+    border: "none",
+  }}
+/> */
+}
+
+{
+  /* <div class="flex flex-col justify-center items-center text-center my-10 mb-18 ">
+  <h1 class=" text-3xl">
+    {/* <img src={wave} alt="" /> */
+}
+//     Hi 👋, I'm Vipin Kumawat <br />A passionate
+//     <h1 class="text-blue-700 text-4xl ">
+//       <Typewriter
+//         options={{
+//           strings: ["Front-End", "Back-End", "MERN", "Full-Stack"],
+//           autoStart: true,
+//           loop: true,
+//         }}
+//       />
+//     </h1>
+//     Developer
+//   </h1>
+// </div> */}
+
+{
+  /* <hr
+  style={{
+    height: "1px",
+    backgroundColor: "white",
+    border: "none",
+  }}
+  class="mt-5"
+/>
+<div>
+  <h1 class="text-2xl m-1 text-center">Skills</h1>
+  <div class="mt-3 grid grid-cols-5 space-x-2 sm:space-x-0  justify-evenly items-center space-y-2 mx-auto">
+     <a href="https://html.com/" target="_blank"> <img src={sk1} alt="" width="70px" height="70px" /></a>
+     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"> <img src={sk2} alt="" width="70px" height="70px" /></a>
+     <a href="https://tailwindcss.com/" target="_blank"> <img src={sk3} alt="" width="70px" height="70px" /></a>
+     <a href="https://www.javascript.com/" target="_blank"> <img src={sk4} alt="" width="70px" height="70px" /></a>
+     <a href="https://react.dev/" target="_blank"> <img src={sk5} alt="" width="70px" height="70px" /></a>
+     <a href="https://redux.js.org/" target="_blank"> <img src={sk6} alt="" width="70px" height="70px" /></a> 
+     <a href="https://nodejs.org/en" target="_blank"> <img src={sk7} alt="" width="70px" height="70px" /></a>
+     <a href="https://www.mongodb.com/atlas/database" target="_blank"> <img src={sk8} alt="" width="70px" height="70px" /></a>
+     <a href="https://expressjs.com/" target="_blank"> <img src={sk9} alt="" width="70px" height="70px" /></a>
+  </div>
+</div>
+</div> */
+}

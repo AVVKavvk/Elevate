@@ -36,7 +36,7 @@ function Book() {
                 boxShadow:
                   "rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px",
               }}
-              class=" w-[250px] h-[200px] bg-gray-400 border  rounded-lg flex justify-center items-center mx-auto text-justify"
+              class=" w-[250px] h-[200px] bg-gray-300 border  rounded-lg flex justify-center items-center mx-auto text-justify"
             >
               <a href={item?.link} target="_blank" class="text-3xl p-5 ">
                 {" "}

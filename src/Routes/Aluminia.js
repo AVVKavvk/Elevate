@@ -48,7 +48,7 @@ function Aluminia() {
           <div className="max-w-[1400px] justify-center   grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 mx-auto pb-8 mt-4">
             {filteredAluminai?.map(temp => {
               return (
-                <div
+                <a href={temp.linkedin_url} target="_blank"
                   key={temp.name}
                   className="border shadow-md hover:shadow-lg  bg-slate-300 shadow-blue-400 flex justify-center items-center mx-auto w-[340px] h-[170px] gap-3"
                 >
@@ -73,7 +73,7 @@ function Aluminia() {
                     </div>
                    
                   </div>
-                </div>
+                </a>
               );
             })}
           </div>

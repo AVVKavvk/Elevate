@@ -21,8 +21,13 @@ function Login() {
         email,
         password,
       });
-      setItem(Key_Access_Token, result.result.token);
+      //  console.log(result);
+      setItem(Key_Access_Token, result?.result?.token);
+      // setItem(email_Token, result?.result?.email);
+      // setItem(name_Token, result?.result?.name);
       countU();
+      // console.log(getItem(email_Token));
+      // console.log(getItem(name_Token));
       dispatch(
         showToast({
           type: TOAST_SUCCESS,
@@ -86,7 +91,7 @@ function Login() {
             <Input
               class=""
               placeholder="email"
-              onChange={(e) => setemail(e.target.value)}
+              onChange={e => setemail(e.target.value)}
             />
           </Form.Item>
 
@@ -102,7 +107,7 @@ function Login() {
           >
             <Input.Password
               placeholder="password"
-              onChange={(e) => setpassword(e.target.value)}
+              onChange={e => setpassword(e.target.value)}
             />
           </Form.Item>
 
@@ -132,9 +137,7 @@ function Login() {
           </Form.Item>
         </Form>
         <Link to="/auth/forpass">
-          <h1 class="m-1 p-2  ">
-             Forget Password
-          </h1>
+          <h1 class="m-1 p-2  ">Forget Password</h1>
         </Link>
         <h1 class="m-1 p-2 ">
           Do not have account{" "}

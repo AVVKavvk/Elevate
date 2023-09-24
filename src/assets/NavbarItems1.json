@@ -32,6 +32,10 @@
         "tag":"Certificates"
     },
     {
+        "link":"/user/feedback",
+        "tag":"Feedback"
+    },
+    {
         "link":"/user/creator",
         "tag":"AboutUs"
     }
