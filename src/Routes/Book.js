@@ -24,10 +24,8 @@ function Book() {
     },
   ];
   return (
-    <div class="flex flex-col mx-auto mb-7 justify-center max-w-[14500px] items-center  ">
-      <h1 class=" text-3xl text-red-500 mb-10 ">
-        When you want to open Books then use your Logged In Email
-      </h1>
+    <div class="flex flex-col mt-10 mx-auto mb-7 justify-center max-w-[14500px] items-center  ">
+      
       <div class="grid md:grid-cols-3 lg:grid-cols-5 sm:grid-cols-2 gap-7 px-3 mx-auto justify-center items-center ">
         {array?.map(item => {
           return (

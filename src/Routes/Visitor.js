@@ -17,6 +17,8 @@ function Visitor() {
                   Login
                 </Link>
               </h1>
+
+              {/* <h2 className="bg-red-200 text-re"></h2> */}
     </div>
   );
 }

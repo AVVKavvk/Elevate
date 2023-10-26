@@ -4,7 +4,7 @@ import Notes1 from "../assets/Notes/Notes1.json";
 function Sem1() {
   return (
     <div class="mx-auto lg:w-[1200px] mt-7 ">
-    <h1 class=" text-2xl text-red-500 ">When you want to open Notes then use your Logged In Email</h1>
+    {/* <h1 class=" text-2xl text-red-500 ">When you want to open Notes then use your Logged In Email</h1> */}
     <div class=" lg:w-[1200px] grid sm:grid-cols-3 grid-cols-2 space-y-5 lg:space-y-0 ml-6 lg:mx-auto lg:grid-cols-7 relative  justify-evenly  mt-8 overflow-hidden">
       {Notes1?.map(item => {
         return (

@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import logo from "./image/logo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
-// import { Dropdown } from "antd";
 import { Key_Access_Token, count_User, getItem } from "./utils/localStorage";
 import { useSelector } from "react-redux";
 import { AiOutlineLogout } from "react-icons/ai";
-import { Dropdown, Space } from "antd";
 import NavbarItem1 from "./assets/NavbarItems1.json";
 function Navbar() {
   const a = getItem(Key_Access_Token);
@@ -207,23 +204,18 @@ function Navbar() {
               </Link>
             </li>
             <li class="hover:underline  p-2 rounded-md transition-all duration-500">
-              <Link to="/aluminia" style={{ textDecoration: "none" }}>
-                Alumni
-              </Link>
-            </li>
-            <li class="hover:underline  p-2 rounded-md transition-all duration-500">
-              <Link to="/resume" style={{ textDecoration: "none" }}>
-                Resume
-              </Link>
-            </li>
-            <li class="hover:underline  p-2 rounded-md transition-all duration-500">
-              <Link to="/certificates" style={{ textDecoration: "none" }}>
-                Certificates
+              <Link to="/placement" style={{ textDecoration: "none" }}>
+              Placement
               </Link>
             </li>
             <li class="hover:underline  p-2 rounded-md transition-all duration-500">
               <Link to="/user/feedback" style={{ textDecoration: "none" }}>
                 Feedback
+              </Link>
+            </li>
+            <li class="hover:underline  p-2 rounded-md transition-all duration-500">
+              <Link to="/compiler" style={{ textDecoration: "none" }}>
+                Compiler
               </Link>
             </li>
             
